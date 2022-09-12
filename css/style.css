@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -17,11 +18,6 @@ main {
   height: 100vh;
   overflow: hidden;
   position: relative;
-  padding: 10vh 10vw;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-content: space-between;
 }
 main.bg1 {
   background: linear-gradient(45deg, #8bfa8b, #01efd4);
@@ -30,12 +26,15 @@ main.bg2 {
   background: linear-gradient(45deg, #d29eff, #8e78ff);
 }
 main ul {
+  position: absolute;
+  top: 15vh;
+  left: 10vw;
   display: flex;
   gap: 50px;
   align-items: center;
 }
 main ul li {
-  width: 400px;
+  width: 30vw;
   height: 50px;
   display: flex;
   align-items: center;
@@ -94,6 +93,21 @@ main ul li.on a {
 }
 main ul li.on a::before {
   left: 120%;
+}
+main article {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 10vw;
+  transform: translateY(-50%);
+  display: none;
+}
+main article h1 {
+  font: normal 15vw/1 "anton";
+  color: #fff;
+}
+main article.on {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
